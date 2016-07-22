@@ -20,13 +20,13 @@
 		<br/>
 		<input type="text" id="runsAllowed">Runs Allowed
 		<br/>
-		<button id="submit" onclick="calculate()">Calculate</button>
+		<button id="submit" onclick="calculate_a()">Calculate</button>
 		<br />
 		<p id="baseballWins">r</p>
 		<script type="text/javascript">
 		//in this case, do not define the variables outside the function. remeber to call the function on the button. Finally dont forget to parseInt(value,10).
 		
-		function calculate() {
+		function calculate_a() {
 
 			var gamesPlayed = parseInt(document.getElementById('gamesPlayed').value,10);
 			var runs = parseInt(document.getElementById('runs').value,10);
@@ -51,13 +51,13 @@
 		<br/>
 		<input type="text" id="pointsAgainst">Points Agains
 		<br/>
-		<button id="submit" onclick="calculate()">Calculate</button>
+		<button id="submit" onclick="calculate_b()">Calculate</button>
 		<br />
 		<p id="basketballWins">r</p>
 		<script type="text/javascript">
 			//in this case, do not define the variables outside the function. remeber to call the function on the button. Finally dont forget to parseInt(value,10).
 			
-		function calculate() {
+		function calculate_b() {
 
 			var pointsFor = parseInt(document.getElementById('pointsFor').value,10);
 			var  pointsAgainst= parseInt(document.getElementById('pointsAgainst').value,10);
@@ -82,13 +82,13 @@
 		<br/>
 		<input type="text" id="goalsAllowed">Goals Allowed
 		<br/>
-		<button id="submit" onclick="calculate()">Calculate</button>
+		<button id="submit" onclick="calculate_c()">Calculate</button>
 		<br />
 		<p id="hockeyWins">r</p>
 		<script type="text/javascript">
 		//in this case, do not define the variables outside the function. remeber to call the function on the button. Finally dont forget to parseInt(value,10).
 		
-		function calculate() {
+		function calculate_c() {
 
 			var goalsScored = parseInt(document.getElementById('goalsScored').value,10);
 			var goalsAllowed = parseInt(document.getElementById('goalsAllowed').value,10);
@@ -115,13 +115,13 @@
 		<br/>
 		<input type="text" id="RLgoalsAllowed">Goals Allowed
 		<br/>
-		<button id="submit" onclick="calculate()">Calculate</button>
+		<button id="submit" onclick="calculate_d()">Calculate</button>
 		<br />
 		<p id="RLwins">r</p>
 		<script type="text/javascript">
 		//in this case, do not define the variables outside the function. remeber to call the function on the button. Finally dont forget to parseInt(value,10).
 		
-		function calculate() {
+		function calculate_d() {
 
 			var RLgamesPlayed = parseInt(document.getElementById('RLgamesPlayed').value,10);
 			var RLgoalsScored = parseInt(document.getElementById('RLgoalsScored').value,10);
