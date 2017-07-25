@@ -20,28 +20,9 @@
 		<br/>
 		<input type="text" id="runsAllowed">Runs Allowed
 		<br/>
-		<button id="submit" onclick="calculate_a()">Calculate</button>
+		<button id="submitA">Calculate</button>
 		<br />
 		<p id="baseballWins">r</p>
-		<script type="text/javascript">
-		//in this case, do not define the variables outside the function. remeber to call the function on the button. Finally dont forget to parseInt(value,10).
-		
-		function calculate_a() {
-
-			var gamesPlayed = parseInt(document.getElementById('gamesPlayed').value,10);
-			var runs = parseInt(document.getElementById('runs').value,10);
-			var runsAllowed = parseInt(document.getElementById('runsAllowed').value,10);
-			
-
-			var exp = Math.pow(((runs + runsAllowed)/gamesPlayed),0.287);
-
-			var winRatio = Math.pow(runs,exp)/(Math.pow(runs,exp)+Math.pow(runsAllowed,exp));
-
-			document.getElementById('baseballWins').innerHTML="Their win ratio is " + winRatio;
-			//the little text update trick depends on a string to be added alongside the displayed info (or on converting the variable into a string).
-		}
-
-	</script>
 </div>
 <br />
 <div id="basketballPytE">
@@ -51,27 +32,9 @@
 		<br/>
 		<input type="text" id="pointsAgainst">Points Agains
 		<br/>
-		<button id="submit" onclick="calculate_b()">Calculate</button>
+		<button id="submitB" onclick="calculate_b()">Calculate</button>
 		<br />
 		<p id="basketballWins">r</p>
-		<script type="text/javascript">
-			//in this case, do not define the variables outside the function. remeber to call the function on the button. Finally dont forget to parseInt(value,10).
-			
-		function calculate_b() {
-
-			var pointsFor = parseInt(document.getElementById('pointsFor').value,10);
-			var  pointsAgainst= parseInt(document.getElementById('pointsAgainst').value,10);
-			
-
-			var exp = 13.91;
-
-			var winRatio = Math.pow(pointsFor,exp)/(Math.pow(pointsFor,exp)+Math.pow(pointsAgainst,exp));
-
-			document.getElementById('basketballWins').innerHTML="Their win ratio is " + winRatio;
-			//the little text update trick depends on a string to be added alongside the displayed info (or on converting the variable into a string).
-			}
-
-		</script>
 </div>
 <br />
 <div id="hockeyPytE">
@@ -82,27 +45,9 @@
 		<br/>
 		<input type="text" id="goalsAllowed">Goals Allowed
 		<br/>
-		<button id="submit" onclick="calculate_c()">Calculate</button>
+		<button id="submitC" onclick="calculate_c()">Calculate</button>
 		<br />
 		<p id="hockeyWins">r</p>
-		<script type="text/javascript">
-		//in this case, do not define the variables outside the function. remeber to call the function on the button. Finally dont forget to parseInt(value,10).
-		
-		function calculate_c() {
-
-			var goalsScored = parseInt(document.getElementById('goalsScored').value,10);
-			var goalsAllowed = parseInt(document.getElementById('goalsAllowed').value,10);
-			
-
-			var exp = 2.15;
-
-			var winRatio = Math.pow(goalsScored,exp)/(Math.pow(goalsScored,exp)+Math.pow(goalsAllowed,exp));
-
-			document.getElementById('hockeyWins').innerHTML="Their win ratio is " + winRatio;
-			//the little text update trick depends on a string to be added alongside the displayed info (or on converting the variable into a string).
-		}
-
-	</script>
 </div>
 <br />
 <div id="RocketLeaguePytE">
@@ -115,37 +60,22 @@
 		<br/>
 		<input type="text" id="RLgoalsAllowed">Goals Allowed
 		<br/>
-		<button id="submit" onclick="calculate_d()">Calculate</button>
+		<button id="submitD" onclick="calculate_d()">Calculate</button>
 		<br />
 		<p id="RLwins">r</p>
-		<script type="text/javascript">
-		//in this case, do not define the variables outside the function. remeber to call the function on the button. Finally dont forget to parseInt(value,10).
-		
-		function calculate_d() {
-
-			var RLgamesPlayed = parseInt(document.getElementById('RLgamesPlayed').value,10);
-			var RLgoalsScored = parseInt(document.getElementById('RLgoalsScored').value,10);
-			var RLgoalsAllowed = parseInt(document.getElementById('RLgoalsAllowed').value,10);
-			
-
-			var exp = Math.pow(((RLgoalsScored + RLgoalsAllowed)/RLgamesPlayed),0.287);
-
-			var winRatio = Math.pow(RLgoalsScored,exp)/(Math.pow(RLgoalsScored,exp)+Math.pow(RLgoalsAllowed,exp));
-
-			document.getElementById('RLwins').innerHTML="Their win ratio is " + winRatio + " (ROCKET LEAGUE FTW!!!)"
-			//the little text update trick depends on a string to be added alongside the displayed info (or on converting the variable into a string).
-		}
-
-	</script>
 </div>
 <br />
 <div>
 	<p> It's interesting to note that, the pythagorean expectation formulas only apply neatly to games where a draw is not possible (i.e. there is no such formula for soccer). </p>
 </div>
 <br />
-<div>
+
 	
-</div>
+<script type="text/javascript" scr ="js/calculate_a.js"></script>
+<script type="text/javascript" scr = "js/calculate_b.js"></script>	
+<script type="text/javascript" scr = "js/calculate_c.js"></script>
+<script type="text/javascript" scr ="js/calculate_d.js"></script>
+
 
 
 </body>
